@@ -121,3 +121,46 @@ Aqui estão alguns recursos adicionais que podem ser úteis para entender melhor
 ---
 
 ## 🎯 Prompt de Resposta Proposto
+
+- Apresentarei dois prompt diferentes:
+
+  -EX.: 1
+  
+"Crie um plano de treino para uma pessoa do biotipo [Ectomorfo/Mesomorfo/Endomorfo] que pode treinar [número de dias] dias por semana por [número de minutos] minutos por sessão. O plano deve focar em [Cardio/Musculação/HIIT/Combinação] e atender aos objetivos de [exemplos de objetivos, como perda de peso, ganho de massa, etc.]."
+
+Esse formato permite que diferentes pessoas preencham suas informações específicas e obtenham um plano de treino personalizado.
+
+-EX.: 2
+
+#ENTRADA
+Você é um personal trainer e quero que me ajude a montar um plano de treino com base nas informações abaixo:
+#VARIÁVEIS 
+{{Biotipo}} - [Ectomorfo/Mesomorfo/Endomorfo]
+{{Dias disponíveis}} - [número de dias]
+{{Tipos de treino}} - [Funcional/Maquinário/Peso Livre/Cardio/HIIT]
+
+#REGRAS
+1. **Biotipo**
+   - Ectomorfo: Corpo mais magro, difícil ganhar peso e massa muscular.
+   - Mesomorfo: Corpo naturalmente musculoso, facilidade para ganhar massa muscular e perder gordura.
+   - Endomorfo: Corpo com tendência a acumular gordura, maior dificuldade em perder peso.
+
+2. **Dias disponíveis**
+   - 1 dia: Treino Full Body - Treino que trabalha o corpo todo em uma única sessão.
+   - 3 dias: Treino ABC - Divisão do treino em três dias, cada um focado em grupos musculares diferentes.
+   - 5 dias: Treino ABCDE - Divisão do treino em cinco dias, com foco ainda mais específico em cada grupo muscular.
+
+3. **Tipos de treino**
+   - Funcional: Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.
+   - Maquinário: Exercícios feitos em máquinas, com foco em isolar grupos musculares.
+   - Peso Livre: Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares simultaneamente.
+   - Cardio: Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.
+   - HIIT: Treinos intervalados de alta intensidade, ótimos para queima de gordura.
+
+#SAÍDA
+Você deve retornar o treino conforme o usuário preencher os campos {{Biotipo}}, {{Dias disponíveis}}, {{Tipos de treino}}.
+
+caso esteja em duvida do uso do ultimo, peça exemplo a sua IA.
+
+
+
